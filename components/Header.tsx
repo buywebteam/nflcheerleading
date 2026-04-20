@@ -10,8 +10,7 @@ export default function Header() {
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "Teams", href: "/#teams" },
-    { name: "Membership", href: "/#membership" },
-    { name: "Benefits", href: "/#benefits" },
+    { name: "About Us", href: "/#about" },
     { name: "Contact", href: "/#contact" },
   ];
 
@@ -43,9 +42,11 @@ export default function Header() {
 
         {/* Desktop CTA */}
         <div className="hidden md:block">
-          <button className="rounded-2xl bg-white px-6 py-3 text-sm font-semibold text-black transition hover:scale-105">
-            Join Membership
-          </button>
+          <Link href="/#teams">
+            <button className="rounded-2xl bg-white px-6 py-3 text-sm font-semibold text-black transition hover:scale-105">
+              Join Membership
+            </button>
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -72,16 +73,11 @@ export default function Header() {
               </Link>
             ))}
 
-            <div className="space-y-3 rounded-2xl border border-white/10 bg-white/5 p-4">
-              <div className="flex items-center gap-3">
-                <ShieldCheck className="h-5 w-5" />
-                <span className="text-sm">Premium VIP Benefits</span>
-              </div>
-            </div>
-
-            <button className="w-full rounded-2xl bg-white px-6 py-3 text-sm font-semibold text-black">
-              Become a VIP Member
-            </button>
+            <Link href="/#teams">
+              <button className="w-full rounded-2xl bg-white px-6 py-3 text-sm font-semibold text-black">
+                Become a Member
+              </button>
+            </Link>
           </div>
         </div>
       )}

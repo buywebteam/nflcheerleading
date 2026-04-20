@@ -1,3 +1,4 @@
+import AboutUs from "@/components/Aboutus";
 import Hero from "@/components/Hero";
 import TeamsSection from "@/components/TeamsSection";
 
@@ -6,6 +7,7 @@ export default function Home() {
     <div>
       <Hero />
       <TeamsSection />
+      <AboutUs />
     </div>
   );
 }

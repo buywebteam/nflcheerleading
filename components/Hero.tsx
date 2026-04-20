@@ -93,7 +93,7 @@ export default function Hero() {
             className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row"
           >
             <Link
-              href="#membership"
+              href="#teams"
               className="inline-flex items-center justify-center gap-2 rounded-2xl bg-white px-8 py-4 text-sm font-semibold text-black transition hover:scale-105"
             >
               Join Membership

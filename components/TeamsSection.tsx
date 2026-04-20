@@ -31,7 +31,6 @@ export default function TeamsSection() {
             Join exclusive membership programs from top NFL cheerleading teams.
           </p>
         </div>
-
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {teamList.map((team) => (
             <div
@@ -52,7 +51,6 @@ export default function TeamsSection() {
 
                 <p className="mt-2 text-sm text-gray-600">{team.membership}</p>
 
-                {/* ✅ FIXED ROUTING */}
                 <Link
                   href={`/teams/${team.slug}`}
                   className="mt-6 inline-flex items-center gap-2 text-sm font-semibold"
