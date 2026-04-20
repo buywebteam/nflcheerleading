@@ -29,7 +29,7 @@ Message:
 ${form.message}
     `;
 
-    const mailtoLink = `mailto:support@nflcheervip.com?subject=${encodeURIComponent(
+    const mailtoLink = `mailto:Nflcheerleadingmanagement@gmail.com?subject=${encodeURIComponent(
       subject,
     )}&body=${encodeURIComponent(body)}`;
 
