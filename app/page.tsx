@@ -20,8 +20,8 @@ export default function Home() {
       <AboutUs />
       <Testimonials />
       <FAQSection />
-      <ContactUs />
       <CTABanner />
+      <ContactUs />
     </div>
   );
 }
