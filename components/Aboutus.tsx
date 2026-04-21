@@ -9,12 +9,12 @@ export default function AboutUs() {
       id="about"
     >
       <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-2">
-        {/* IMAGE SIDE */}
         <div className="relative h-112.5 w-full overflow-hidden rounded-3xl shadow-xl">
           <Image
             src="/images/nfl_cheerleading_banner.svg"
             alt="NFL Cheerleaders"
             fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
             className="object-cover"
           />
           <div className="absolute inset-0 bg-black/30" />
@@ -25,7 +25,6 @@ export default function AboutUs() {
           </div>
         </div>
 
-        {/* TEXT SIDE */}
         <div>
           <div className="inline-flex items-center gap-2 rounded-full bg-black/5 px-4 py-2 text-sm font-medium">
             <Sparkles className="h-4 w-4" />
@@ -49,7 +48,6 @@ export default function AboutUs() {
             spirit of football culture.
           </p>
 
-          {/* FEATURES */}
           <div className="mt-8 grid gap-4 sm:grid-cols-2">
             <div className="rounded-2xl border p-4">
               <Users className="h-5 w-5" />

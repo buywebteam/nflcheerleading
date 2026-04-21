@@ -42,6 +42,7 @@ export default function TeamsSection() {
                   src={team.image}
                   alt={team.name}
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                   className="object-cover"
                 />
               </div>

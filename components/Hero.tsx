@@ -2,9 +2,8 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
-import { ArrowRight, Star } from "lucide-react";
+import { Star } from "lucide-react";
 import { useEffect, useState } from "react";
-import { section } from "framer-motion/m";
 
 const heroImages = [
   {
@@ -38,14 +37,13 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-screen overflow-hidden bg-black text-white">
-      {/* Animated Background Images */}
-      <AnimatePresence mode="wait">
+      <AnimatePresence>
         <motion.div
           key={currentIndex}
           initial={{ opacity: 0, scale: 1.05 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 1.05 }}
-          transition={{ duration: 1.2 }}
+          transition={{ duration: 0.8 }}
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage: `url(${heroImages[currentIndex].image})`,
@@ -53,10 +51,8 @@ export default function Hero() {
         />
       </AnimatePresence>
 
-      {/* Overlay */}
       <div className="absolute inset-0 bg-black/70" />
 
-      {/* Content */}
       <div className="relative z-10 mx-auto flex min-h-screen max-w-7xl items-center justify-center px-4 text-center sm:px-6 lg:px-8">
         <div className="max-w-4xl">
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm backdrop-blur-sm">
@@ -94,21 +90,12 @@ export default function Hero() {
           >
             <Link
               href="#teams"
-              className="inline-flex items-center justify-center gap-2 rounded-2xl bg-white px-8 py-4 text-sm font-semibold text-black transition hover:scale-105"
-            >
-              Join Membership
-              <ArrowRight className="h-5 w-5" />
-            </Link>
-
-            <Link
-              href="#teams"
-              className="inline-flex items-center justify-center rounded-2xl border border-white/30 px-8 py-4 text-sm font-semibold transition hover:bg-white/10"
+              className="inline-flex items-center justify-center rounded-full border border-white/30 px-8 py-4 text-sm font-semibold transition hover:bg-white/10"
             >
               Explore Teams
             </Link>
           </motion.div>
 
-          {/* Current Team Indicator */}
           <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
             {heroImages.map((team, index) => (
               <button

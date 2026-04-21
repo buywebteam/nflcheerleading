@@ -29,7 +29,6 @@ export default function TeamMembershipDetails({
 }: TeamMembershipDetailsProps) {
   return (
     <section className="bg-black text-white">
-      {/* HERO */}
       <div className="relative h-120 w-full">
         <Image src={bannerImage} alt={teamName} fill className="object-cover" />
         <div className="absolute inset-0 bg-black/70" />
@@ -43,10 +42,8 @@ export default function TeamMembershipDetails({
 
             <h1 className="mt-4 text-4xl font-bold sm:text-5xl">{teamName}</h1>
 
-            {/* NEW: Description */}
             {description && <p className="mt-4 text-gray-200">{description}</p>}
 
-            {/* NEW: Meta Info */}
             <div className="mt-4 flex flex-wrap items-center justify-center gap-4 text-sm text-gray-300">
               {location && (
                 <span className="flex items-center gap-1">
@@ -66,7 +63,6 @@ export default function TeamMembershipDetails({
         </div>
       </div>
 
-      {/* TIERS */}
       <div className="mx-auto max-w-7xl px-4 py-20">
         <h2 className="text-center text-3xl font-bold">Membership Tiers</h2>
 
@@ -76,12 +72,12 @@ export default function TeamMembershipDetails({
               key={i}
               className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:-translate-y-2"
             >
-              {/* background image */}
               <div className="absolute inset-0 opacity-20 group-hover:opacity-30 transition">
                 <Image
                   src={tier.image}
                   alt={tier.title}
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                   className="object-cover"
                 />
               </div>
@@ -89,7 +85,6 @@ export default function TeamMembershipDetails({
               <div className="relative z-10">
                 <h3 className="text-2xl font-bold">{tier.title}</h3>
 
-                {/* NEW: Short description */}
                 {tier.shortDescription && (
                   <p className="mt-1 text-sm text-gray-300">
                     {tier.shortDescription}
@@ -98,7 +93,6 @@ export default function TeamMembershipDetails({
 
                 <p className="mt-3 text-3xl font-bold">{tier.price}</p>
 
-                {/* NEW: Highlights */}
                 {tier.highlights?.length ? (
                   <div className="mt-4 flex flex-wrap gap-2">
                     {tier.highlights.map((h, idx) => (
@@ -112,7 +106,6 @@ export default function TeamMembershipDetails({
                   </div>
                 ) : null}
 
-                {/* Benefits */}
                 <div className="mt-6 space-y-3">
                   {tier.benefits.map((b, idx) => (
                     <div key={idx} className="flex gap-2">
@@ -122,10 +115,13 @@ export default function TeamMembershipDetails({
                   ))}
                 </div>
 
-                <button className="mt-8 flex w-full items-center justify-center gap-2 rounded-2xl bg-white py-3 text-black transition hover:scale-105">
+                <a
+                  href={`mailto:Nflcheerleadingmanagement@gmail.com?subject=Membership Subscription - ${tier.title}`}
+                  className="mt-8 flex w-full items-center justify-center gap-2 rounded-2xl bg-white py-3 text-black transition hover:scale-105"
+                >
                   Join {tier.title}
                   <ArrowRight className="h-4 w-4" />
-                </button>
+                </a>
               </div>
             </div>
           ))}
