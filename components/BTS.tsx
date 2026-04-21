@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
-import { Camera, Play } from "lucide-react";
+import { Camera } from "lucide-react";
+import { motion } from "framer-motion";
 
 const media = [
   {
@@ -25,7 +28,13 @@ export default function BehindTheScenes() {
     <section className="bg-white py-24 text-black">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* HEADER */}
-        <div className="text-center">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-center"
+        >
           <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-black/10 bg-black/5 px-4 py-2 text-sm font-medium">
             <Camera className="h-4 w-4" />
             Exclusive Behind the Scenes
@@ -39,14 +48,24 @@ export default function BehindTheScenes() {
             Get exclusive access to training sessions, game-day preparations,
             VIP events, and behind-the-scenes moments with NFL cheerleaders.
           </p>
-        </div>
+        </motion.div>
 
+        {/* GRID */}
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {media.map((item, index) => (
-            <div
+            <motion.div
               key={index}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.5,
+                delay: index * 0.15,
+              }}
+              viewport={{ once: true }}
+              whileHover={{ scale: 1.03 }}
               className="group relative overflow-hidden rounded-3xl"
             >
+              {/* IMAGE */}
               <div className="relative h-72 w-full">
                 <Image
                   src={item.image}
@@ -57,16 +76,14 @@ export default function BehindTheScenes() {
                 />
               </div>
 
-              <div className="absolute inset-0 bg-black/40" />
+              <div className="absolute inset-0 bg-black/40 transition group-hover:bg-black/50" />
 
               <div className="absolute inset-0 flex items-end p-5">
-                <div>
-                  <h3 className="text-lg font-semibold text-white">
-                    {item.title}
-                  </h3>
-                </div>
+                <h3 className="text-lg font-semibold text-white">
+                  {item.title}
+                </h3>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
