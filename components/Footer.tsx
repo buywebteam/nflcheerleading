@@ -4,7 +4,7 @@ import { Crown, Mail } from "lucide-react";
 export default function Footer() {
   return (
     <footer className="bg-black text-white">
-      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <div className="flex items-center gap-2 text-lg font-bold">
@@ -18,7 +18,6 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* QUICK LINKS */}
           <div>
             <h4 className="font-semibold">Quick Links</h4>
             <ul className="mt-4 space-y-2 text-sm text-gray-400">
@@ -61,10 +60,8 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* DIVIDER */}
         <div className="my-10 border-t border-white/10" />
 
-        {/* BOTTOM */}
         <div className="flex flex-col items-center justify-between gap-4 text-sm text-gray-400 sm:flex-row">
           <p>
             © {new Date().getFullYear()} NFL Cheerleading. All rights reserved.

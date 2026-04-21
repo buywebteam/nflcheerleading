@@ -43,6 +43,7 @@ export default function TeamsSection() {
                   alt={team.name}
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                  loading="eager"
                   className="object-cover"
                 />
               </div>

@@ -34,7 +34,6 @@ ${form.message}`;
       subject,
     )}&body=${encodeURIComponent(body)}`;
 
-    // safer than window.location.href
     window.open(mailtoLink, "_self");
   };
 

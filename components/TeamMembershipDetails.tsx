@@ -78,6 +78,7 @@ export default function TeamMembershipDetails({
                   alt={tier.title}
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                  loading="eager"
                   className="object-cover"
                 />
               </div>
@@ -117,7 +118,7 @@ export default function TeamMembershipDetails({
 
                 <a
                   href={`mailto:Nflcheerleadingmanagement@gmail.com?subject=Membership Subscription - ${tier.title}`}
-                  className="mt-8 flex w-full items-center justify-center gap-2 rounded-2xl bg-white py-3 text-black transition hover:scale-105"
+                  className="mt-8 flex w-full items-center justify-center gap-2 rounded-full bg-white py-3 text-black transition hover:scale-105"
                 >
                   Join {tier.title}
                   <ArrowRight className="h-4 w-4" />

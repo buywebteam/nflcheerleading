@@ -12,7 +12,7 @@ export const teams = {
         title: "Sideline Spirit Tier",
         price: "$500",
         shortDescription: "Basic fan access with digital perks",
-        image: "/images/denver2.webp",
+        image: "/images/denver 3.jpg",
         highlights: ["Digital Card", "Exclusive Videos", "Merch Discount"],
         benefits: [
           "Digital Spirit Membership Card",
@@ -39,7 +39,7 @@ export const teams = {
         title: "Elite VIP Tier",
         price: "$1500",
         shortDescription: "Premium VIP fan experience",
-        image: "/images/denver2.webp",
+        image: "/images/denver1.webp",
         highlights: ["VIP Card", "Welcome Kit", "VIP Events"],
         benefits: [
           "Engraved VIP Metal Card",
@@ -65,7 +65,7 @@ export const teams = {
         title: "Ocean Fan Tier",
         price: "$450",
         shortDescription: "Digital fan access",
-        image: "/images/miami4.webp",
+        image: "/images/miami3.webp",
         highlights: ["Digital Card", "Video Content"],
         benefits: [
           "Digital Membership Card",
@@ -90,7 +90,7 @@ export const teams = {
         title: "Coral VIP Tier",
         price: "$1400",
         shortDescription: "Full VIP experience",
-        image: "/images/miami4.webp",
+        image: "/images/miami2.jpeg",
         highlights: ["VIP Access", "Merch Kit"],
         benefits: [
           "VIP Metal Card",
@@ -115,7 +115,7 @@ export const teams = {
         title: "Lone Star Tier",
         price: "$600",
         shortDescription: "Starter fan membership",
-        image: "/images/lion2.jpeg",
+        image: "/images/lions1.webp",
         highlights: ["Digital Access", "Discount"],
         benefits: [
           "Digital Membership Card",
@@ -127,7 +127,7 @@ export const teams = {
         title: "Rodeo Spirit Tier",
         price: "$1100",
         shortDescription: "Enhanced fan perks",
-        image: "/images/lion2.jpeg",
+        image: "/images/lion3.webp",
         highlights: ["Physical Card", "Events"],
         benefits: [
           "Physical Fan Card",
@@ -140,7 +140,7 @@ export const teams = {
         title: "Star VIP Tier",
         price: "$1600",
         shortDescription: "Premium Lions experience",
-        image: "/images/lion2.jpeg",
+        image: "/images/lion4.jpg",
         highlights: ["VIP Card", "Premium Events"],
         benefits: [
           "Engraved VIP Card",
@@ -165,7 +165,7 @@ export const teams = {
         title: "Patriot Fan Tier",
         price: "$500",
         shortDescription: "Entry level membership",
-        image: "/images/patriots1.jpg",
+        image: "/images/england4.png",
         highlights: ["Digital Card", "Content Access"],
         benefits: [
           "Digital Membership Card",
@@ -177,7 +177,7 @@ export const teams = {
         title: "Freedom Tier",
         price: "$1000",
         shortDescription: "Mid-level fan experience",
-        image: "/images/patriots1.jpg",
+        image: "/images/england2.webp",
         highlights: ["Signed Items", "Events"],
         benefits: [
           "Physical Membership Card",
@@ -190,7 +190,7 @@ export const teams = {
         title: "Legacy VIP Tier",
         price: "$1500",
         shortDescription: "Elite Patriots experience",
-        image: "/images/patriots1.jpg",
+        image: "/images/england5.jpeg",
         highlights: ["VIP Access", "Premium Kit"],
         benefits: [
           "VIP Metal Card",

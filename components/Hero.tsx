@@ -55,7 +55,7 @@ export default function Hero() {
 
       <div className="relative z-10 mx-auto flex min-h-screen max-w-7xl items-center justify-center px-4 text-center sm:px-6 lg:px-8">
         <div className="max-w-4xl">
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm backdrop-blur-sm">
+          <div className="my-8 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm backdrop-blur-sm">
             <Star className="h-4 w-4" />
             Premium NFL Cheer Membership Experience
           </div>
