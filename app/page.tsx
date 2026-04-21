@@ -1,5 +1,6 @@
 import AboutUs from "@/components/Aboutus";
 import BehindTheScenes from "@/components/BTS";
+import ContactUs from "@/components/Contact";
 import CTABanner from "@/components/CTA";
 import FAQSection from "@/components/FAQ";
 import Hero from "@/components/Hero";
@@ -19,6 +20,7 @@ export default function Home() {
       <AboutUs />
       <Testimonials />
       <FAQSection />
+      <ContactUs />
       <CTABanner />
     </div>
   );

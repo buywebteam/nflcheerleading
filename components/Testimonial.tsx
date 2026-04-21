@@ -6,23 +6,23 @@ const testimonials = [
     id: 1,
     name: "Jessica Morgan",
     team: "Denver Broncos Cheerleaders Member",
-    image: "/images/denvert.webp",
+    image: "/images/T4.jpg",
     review:
       "Joining the Broncos VIP membership completely changed my fan experience. From exclusive events to premium merchandise discounts, everything feels first-class.",
   },
   {
     id: 2,
-    name: "Amanda Lewis",
+    name: "John Lewis",
     team: "Miami Dolphins Cheerleaders Member",
-    image: "/images/miamit.jpeg",
+    image: "/images/T3.jpg",
     review:
       "The VIP access and private member events are absolutely amazing. I finally feel like part of something exclusive and premium.",
   },
   {
     id: 3,
-    name: "Rachel Adams",
+    name: "Michael Adams",
     team: "Detroit Lions Cheerleaders Member",
-    image: "/images/detroit.webp",
+    image: "/images/T2.jpg",
     review:
       "The membership perks are worth every dollar. Priority access, special events, and the premium welcome gifts make it unforgettable.",
   },
@@ -30,15 +30,15 @@ const testimonials = [
     id: 4,
     name: "Sophia Carter",
     team: "New England Patriots Cheerleaders Member",
-    image: "/images/england.jpeg",
+    image: "/images/T5.jpg",
     review:
       "The Patriots Elite membership gave me unforgettable VIP access. From premium events to exclusive backstage experiences, it truly feels luxury-level.",
   },
   {
     id: 5,
-    name: "Emily Johnson",
+    name: "Jake Johnson",
     team: "Denver Broncos Cheerleaders Member",
-    image: "/images/denvert1.jpeg",
+    image: "/images/T1.jpg",
     review:
       "I love the premium fan perks and exclusive member-only events. It feels like being part of the team beyond game day.",
   },
@@ -46,7 +46,7 @@ const testimonials = [
     id: 6,
     name: "Olivia Bennett",
     team: "Miami Dolphins Cheerleaders Member",
-    image: "/images/miamit1.webp",
+    image: "/images/T6.jpg",
     review:
       "From early ticket access to special VIP meet-and-greets, this membership exceeded my expectations in every possible way.",
   },
