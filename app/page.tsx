@@ -5,6 +5,7 @@ import CTABanner from "@/components/CTA";
 import FAQSection from "@/components/FAQ";
 import Hero from "@/components/Hero";
 import HowToSubscribe from "@/components/HowToSubscribe";
+import MeetAndGreet from "@/components/MeetAndGreet";
 import StatsBar from "@/components/Statsbar";
 import TeamsSection from "@/components/TeamsSection";
 import Testimonials from "@/components/Testimonial";
@@ -17,6 +18,7 @@ export default function Home() {
       <HowToSubscribe />
       <TeamsSection />
       <BehindTheScenes />
+      <MeetAndGreet />
       <AboutUs />
       <Testimonials />
       <FAQSection />

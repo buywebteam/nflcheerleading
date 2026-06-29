@@ -27,7 +27,6 @@ export default function BehindTheScenes() {
   return (
     <section className="bg-white py-24 text-black">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* HEADER */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -50,7 +49,6 @@ export default function BehindTheScenes() {
           </p>
         </motion.div>
 
-        {/* GRID */}
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {media.map((item, index) => (
             <motion.div
@@ -65,7 +63,6 @@ export default function BehindTheScenes() {
               whileHover={{ scale: 1.03 }}
               className="group relative overflow-hidden rounded-3xl"
             >
-              {/* IMAGE */}
               <div className="relative h-72 w-full">
                 <Image
                   src={item.image}
