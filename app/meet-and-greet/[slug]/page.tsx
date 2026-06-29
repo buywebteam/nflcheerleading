@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, MapPin, Clock, Star, CheckCircle2 } from "lucide-react";
 import { cheerleaders } from "@/data/cheerleaders";
+import BookingButton from "@/components/BookingButton";
 
 type Props = {
   params: { slug: string };
@@ -23,7 +24,6 @@ export function generateMetadata({ params }: Props) {
 
 export default async function CheerleaderProfile({ params }: Props) {
   const { slug } = await params;
-
   const person = cheerleaders.find((p) => p.slug === slug);
 
   if (!person) notFound();
@@ -172,12 +172,14 @@ export default async function CheerleaderProfile({ params }: Props) {
               </ul>
             </div>
 
-            <Link
-              href={`/meet-and-greet/${slug}/book`}
-              className="mt-8 inline-flex w-full items-center justify-center rounded-2xl bg-white py-4 text-base font-bold text-black transition hover:bg-white/90"
-            >
-              Book Your Meet & Greet
-            </Link>
+            <BookingButton
+              cheerleader={{
+                slug,
+                displayName,
+                team,
+                meetAndGreet,
+              }}
+            />
           </div>
         </div>
       </section>
