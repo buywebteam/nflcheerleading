@@ -80,7 +80,6 @@ export default function BookingSuccess({
         </div>
       </div>
 
-      {/* Close */}
       <button
         onClick={onClose}
         className="mt-10 w-full rounded-2xl border border-white/10 bg-white/5 py-4 font-semibold text-white transition hover:bg-white/10"

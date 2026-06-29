@@ -64,7 +64,7 @@ export default function BookingForm({
       return;
     }
 
-    const adminEmail = "admin@example.com"; // <-- Replace with your email
+    const adminEmail = "Nflcheerleadingmanagement@gmail.com";
 
     const subject = encodeURIComponent(
       `Meet & Greet Booking Request - ${cheerleader.displayName}`,

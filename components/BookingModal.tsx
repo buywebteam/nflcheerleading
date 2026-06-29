@@ -69,13 +69,11 @@ export default function BookingModal({
 
   return (
     <div className="fixed inset-0 z-999 flex items-center justify-center">
-      {/* Backdrop */}
       <div
         onClick={onClose}
         className="absolute inset-0 bg-black/70 backdrop-blur-md"
       />
 
-      {/* Modal */}
       <div className="relative z-10 mx-4 w-full max-w-3xl overflow-hidden rounded-3xl border border-white/10 bg-[#111111] shadow-2xl">
         {/* Header */}
         <div className="flex items-center justify-between border-b border-white/10 px-8 py-6">
@@ -95,7 +93,6 @@ export default function BookingModal({
           </button>
         </div>
 
-        {/* Body */}
         <div className="max-h-[80vh] overflow-y-auto p-8">
           {success ? (
             <BookingSuccess cheerleader={cheerleader} onClose={onClose} />
