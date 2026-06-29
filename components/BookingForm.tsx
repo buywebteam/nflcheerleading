@@ -123,7 +123,6 @@ Please contact me to confirm my booking.
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
-      {/* Name */}
       <div className="grid gap-5 md:grid-cols-2">
         <div>
           <label className="mb-2 block text-sm font-medium text-white/70">
@@ -154,7 +153,6 @@ Please contact me to confirm my booking.
         </div>
       </div>
 
-      {/* Email & Phone */}
       <div className="grid gap-5 md:grid-cols-2">
         <div>
           <label className="mb-2 block text-sm font-medium text-white/70">
@@ -186,7 +184,6 @@ Please contact me to confirm my booking.
         </div>
       </div>
 
-      {/* Date & Time */}
       <div className="grid gap-5 md:grid-cols-2">
         <div>
           <label className="mb-2 block text-sm font-medium text-white/70">
@@ -219,7 +216,6 @@ Please contact me to confirm my booking.
         </div>
       </div>
 
-      {/* Guests */}
       <div>
         <label className="mb-2 block text-sm font-medium text-white/70">
           Number of Guests
@@ -229,7 +225,7 @@ Please contact me to confirm my booking.
           name="guests"
           value={form.guests}
           onChange={handleChange}
-          className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none"
+          className="w-full rounded-xl border border-white/10 text-white bg-white/5 px-4 py-3 outline-none"
         >
           <option value="1">1 Guest</option>
           <option value="2">2 Guests</option>
@@ -239,7 +235,6 @@ Please contact me to confirm my booking.
         </select>
       </div>
 
-      {/* Message */}
       <div>
         <label className="mb-2 block text-sm font-medium text-white/70">
           Special Requests
