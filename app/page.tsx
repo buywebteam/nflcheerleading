@@ -17,8 +17,8 @@ export default function Home() {
       <StatsBar />
       <HowToSubscribe />
       <TeamsSection />
-      <BehindTheScenes />
       <MeetAndGreet />
+      <BehindTheScenes />
       <AboutUs />
       <Testimonials />
       <FAQSection />

@@ -43,7 +43,7 @@ export default function BookingSuccess({
 
       {/* Download Contract */}
       <a
-        href="/contracts/meet-and-greet-agreement.pdf"
+        href="/contracts/NFLCheerleadingMeet&GreetParticipationAgreement.pdf"
         download
         className="mt-10 inline-flex items-center gap-3 rounded-2xl bg-white px-8 py-4 font-semibold text-black transition hover:bg-neutral-200"
       >
