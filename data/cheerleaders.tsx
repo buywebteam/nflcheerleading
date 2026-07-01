@@ -44,7 +44,7 @@ export const cheerleaders = [
     team: "Denver Broncos Cheerleaders",
     teamSlug: "denver-broncos",
     image: "/images/katie.jpg",
-    coverImage: "/images/katie.jpg",
+    coverImage: "/images/dbckatie.jpeg",
     jerseyNumber: 7,
     yearsOnTeam: 3,
     hometown: "Kansas City, Missouri",
