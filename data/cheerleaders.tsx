@@ -43,7 +43,7 @@ export const cheerleaders = [
     displayName: "DBC Katie",
     team: "Denver Broncos Cheerleaders",
     teamSlug: "denver-broncos",
-    image: "/images/katie.jpg",
+    image: "/images/dbckatie.jpeg",
     coverImage: "/images/dbckatie.jpeg",
     jerseyNumber: 7,
     yearsOnTeam: 3,
